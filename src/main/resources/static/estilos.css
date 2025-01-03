@@ -1,0 +1,19 @@
+/* Estilo para hacer los botones más pequeños */
+ #btn-logout {
+ width: 150px;      /* Ancho del botón */
+    height: 40px;
+}
+#btn-add-user{
+width: 150px;      /* Ancho del botón */
+    height: 40px;
+}
+/* styles.css */
+
+body {
+    color: #333;
+      background: #7b61d8;
+}
+
+h1 {
+    color: #ff0000;
+}
