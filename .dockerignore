@@ -1,3 +1,9 @@
-.vscode
-target
-.gitignore
+target/
+*.jar
+*.class
+*.log
+*.iml
+.idea/
+.git/
+node_modules/
+e
