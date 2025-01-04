@@ -78,7 +78,6 @@ public class SecurityConfig  {
                         authorize
                                 .requestMatchers("/index.html").hasAuthority("ROLE_ADMIN")  // Bloquear acceso a index.html para ROLE_ADMIN
                                 .requestMatchers("/user.html").hasAuthority("ROLE_USER")
-                                .requestMatchers("/rest/all").hasAnyAuthority("ROLE_USER", "ROLE_ADMIN")
                                 .requestMatchers("/rest/save/**", "/rest/edit/**", "/rest/delete/**").hasAuthority("ROLE_ADMIN")
                         .anyRequest().authenticated()
                 )
