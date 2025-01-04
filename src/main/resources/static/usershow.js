@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 function loadUsers() {
     $.ajax({
-        url: "https://loginspringboot-vcjl.onrender.com/rest/all",
+        url: "https://loginspringboot-vcjl.onrender.com/all",
         type: "GET",
         dataType: "json",
         success: function(data) {
