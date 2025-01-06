@@ -1,23 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Acceso Restringido</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding-top: 100px;
-        }
-        h1 {
-            color: red;
-        }
-    </style>
-</head>
-<body>
-<img src="/acces.jpg" alt="Acceso Restringido" width="25%" height="auto"/>
-<h1>Acceso Restringido</h1>
-<p>No tiene permisos para acceder a esta página.</p>
-</body>
+    <style></style>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    header {
+      padding-top: 0%;
+      position: relative;
+      margin: auto;
+      text-align: center;
+      background-color: #8a1b1f;
+      border: 0px;
+      width: 100%;
+      height: auto;
+      padding-bottom: 20px;
+      outline: #8a1b1f 10px solid;
+    }
+    header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    header h1 {
+      padding-bottom: 0px;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 300%;
+      color: white;
+    }
+    h1 {
+      padding-bottom: 0px;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 300%;
+      color: black;
+    }
+    .regreso {
+      margin-top: 20px;
+      margin-bottom: 90px;
+    }
+    p{
+        font-size: 30px;
+        font-family: "Times New Roman", Times, serif;
+    }
+  </style>
+  
+
+
+  <body>
+    <header>
+        <img class="imagenheader" src="contabilidad.png" alt="imagenConta" />
+        <h1>Universidad Tecnica de Ambato</h1>
+      </header>
+    <div class="container mt-5">
+        <!-- Header Section -->
+        <img src="/acces.jpg" alt="Acceso Restringido" width="25%" height="auto" />
+        <h1>Acceso Restringido</h1>
+        <p>No tiene permisos para acceder a esta página.</p>
+    
+        <p class="regreso"> Volver al <a href="/">Inicio</a></p>
+        </body>
 </html>

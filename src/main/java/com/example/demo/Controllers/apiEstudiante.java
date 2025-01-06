@@ -14,10 +14,6 @@ import java.util.List;
 public class apiEstudiante {
     @Autowired
     EstudianteRepository estudianteRepository;
-    @GetMapping("/saludar")
-    public String saludar(){
-        return "Hola mundo";
-    }
     @GetMapping("/")
     public String index(){
         return "index";
@@ -40,5 +36,10 @@ public class apiEstudiante {
     @DeleteMapping("/delete/{cedula}")
     public void deleteEstudiante(@PathVariable String cedula){
         estudianteRepository.deleteById(cedula);
+    }
+
+    @GetMapping("/find/{cedula}")
+    public Estudiante searchEstudiante(@PathVariable String cedula) {
+        return estudianteRepository.findById(cedula).get();
     }
 }
